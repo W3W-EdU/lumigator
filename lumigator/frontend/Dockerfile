@@ -14,7 +14,7 @@ RUN npm --prefix /mzai/lumigator/frontend install
 RUN npm --prefix /mzai/lumigator/frontend run build
 
 
-FROM nginx:1.27.2-alpine-slim AS server
+FROM nginx:1.29.1-alpine-slim AS server
 
 # Copy built files to the Nginx image
 COPY --from=base /mzai/lumigator/frontend/dist /usr/share/nginx/html

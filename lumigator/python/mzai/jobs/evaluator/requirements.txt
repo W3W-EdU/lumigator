@@ -18,7 +18,9 @@ ray[default]==2.30.0
 ruff==0.5.5
 s3fs==2024.5.0
 scipy==1.13.1
-sentencepiece==0.2.0
+sentencepiece==0.2.1
 transformers==4.43.4
 urllib3>=1.26.18,<2
 wandb==0.16.3
+torch>=2.10.0 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.46.2 # not directly required, pinned by Snyk to avoid a vulnerability
